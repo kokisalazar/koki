@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,45 +9,67 @@
 <body>
 
 <header>
-    <h1>🚀 Join Our Team</h1>
-    <p>Apply for exciting job opportunities</p>
+    <nav class="nav">
+        <h1>CareerHub</h1>
+        <a href="#apply" class="nav-btn">Apply Now</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Build Your Future With Us</h2>
+        <p>We’re hiring talented people who want to grow and make an impact.</p>
+    </div>
 </header>
 
-<section class="about">
-    <h2>About the Job</h2>
-    <p>
-        We are looking for motivated individuals who want to grow,
-        learn new skills, and work in a creative environment.
-    </p>
+<section class="features">
+    <div class="feature-card">
+        <h3>🌍 Remote Friendly</h3>
+        <p>Work from anywhere with flexible schedules.</p>
+    </div>
+    <div class="feature-card">
+        <h3>📈 Career Growth</h3>
+        <p>Learn new skills and advance your career.</p>
+    </div>
+    <div class="feature-card">
+        <h3>🤝 Great Team</h3>
+        <p>Collaborate with creative and passionate people.</p>
+    </div>
 </section>
 
-<section class="form-section">
+<section class="form-section" id="apply">
     <h2>Job Application Form</h2>
 
     <form>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
 
-        <label for="position">Position Applying For</label>
-        <select id="position" required>
-            <option value="">Select a position</option>
-            <option>Web Developer</option>
-            <option>Designer</option>
-            <option>Marketing Specialist</option>
-        </select>
+        <div class="input-group">
+            <label>Position</label>
+            <select required>
+                <option value="">Select position</option>
+                <option>Web Developer</option>
+                <option>UI/UX Designer</option>
+                <option>Marketing Specialist</option>
+            </select>
+        </div>
 
-        <label for="message">Why should we hire you?</label>
-        <textarea id="message" rows="4" placeholder="Write a short message"></textarea>
+        <div class="input-group">
+            <label>Why should we hire you?</label>
+            <textarea rows="4" placeholder="Tell us about yourself"></textarea>
+        </div>
 
         <button type="submit">Submit Application</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Job Application Site</p>
+    <p>© 2026 CareerHub. All rights reserved.</p>
 </footer>
 
 </body>
